@@ -3,8 +3,13 @@ font-family: 'Conv_Franklin Gothic Medium';
 min-width: 980px;
 }
 
-h1 {  }
+h1,h2,h3,h4,h5 { color: @title-color; margin: 23px 0;}
 
+h1 {.font(24px); font-weight: normal;}
+h2 {.font(22px);}
+h3 {.font(18px); font-weight: normal;}
+h4 {.font(20px); font-weight: normal; .upper;}
+h5 {.font(16px); .upper; font-weight: normal;}
 *{
 margin:0px;
 padding:0px;
@@ -33,6 +38,7 @@ a {text-decoration: none;}
 /* VARIABLES */
 @main-gray: #f6f6f6;
 @myriad-font: 'Myriad Pro';
+@title-color: #034ea9;
 /* --- */
 
 /* MIXINS */
@@ -295,6 +301,14 @@ footer {background: url("/images/footer-bg.jpg") repeat-x; .size(100%,194px);
   }
 }
 
+.text {margin: 0 auto; width: 830px;
+  p {.font(14px,22px); color: #313131; font-family: Arial; margin: 10px 0;}
+  ul {.font(14px,22px); color: #313131; font-family: Arial;
+    li {list-style: disc inside none; padding: 0 0 0 10px;}
+  }
+}
+
+.mg-text {margin: 25px 0 20px;}
 
 
 
